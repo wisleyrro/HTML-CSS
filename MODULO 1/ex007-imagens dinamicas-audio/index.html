@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <!--criando imagens dinamicas
+    #Imagens Dinâmicas
+    gerar imagem 300x300
+    gerar imagem 700x700
+    gerar imagem 1000x1000
+    -->
+    <h1>Imagens dinâmica</h1>
+<p>tentar abrir o site em dispositivos diferente para aumentar e diminuir o tamanho do navegador</>
+    <picture>
+        <source media="(min-width: 750px)" srcset="imagens/foto3-p.png" type="image/">
+        <!--Sempre coloca uma folga no max-width de 50px-->
+        <source media="(max-width:1050px)" srcset="imagens/foto2-m.png" type="image/">
+        <img src="imagens/foto1.png" alt="foto1">
+    </picture>
+    <hr>
+    <!--ADICIONANDO AUDIO
+    -->
+    <h1>REPRODUZINDO AUDIO</h1>
+    <audio src="midias/audo1.mp3" controls autoplay></audio>
+    <hr>
+    <!--MP3 -WAV OGG-->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midias/audo1.mp3" type="audio/mpeg">
+        <source src="midias/audo1.ogg" type="audio/ogg">
+        <source src="midias/audo1.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não e compativel com os audios exibidos <a href="midias/audo1.mp3">clique aqui neste link para download</a></p>
+    </audio>
+    
+</body>
+</html>

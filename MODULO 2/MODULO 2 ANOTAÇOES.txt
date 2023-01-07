@@ -1,0 +1,11 @@
+#PALETA DE CORES
+SITE DE PALETAS DE CORES: https://color.adobe.com/pt/create/color-wheel
+MONTAGEM DE SITE PARA SABER CORES: https://paletton.com/
+OUTRO SITE DE PALETAS: https://coolors.co/ffc2e2-ff90b3-43c59e-008dd5-0c120c
+
+#COMO CAPTURAR CORES DA TELA?
+Instalar extenção colorzilla
+
+#Capítulo 14 Aula 03 – Famílias de fonte com CSS
+-css web safe font combinations
+LINK: https://www.w3schools.com/cssref/css_websafe_fonts.php

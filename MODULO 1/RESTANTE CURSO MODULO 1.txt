@@ -1,0 +1,81 @@
+#FORMATOS DE VIDEO PARA SEU SITE 
+-instalar o app handbrake para detalhes de video. (software gratuito)
+-converter video para web > vimeo Youtube 720p30frames em presets ao finalizar em start encode
+-formatos: m4V, MP4,ogv e webM
+-existe site que converte em ogv
+
+#VIDEOS EM HOSPEDAGEM PRÓPRIA
+obs: sistema vai carregar os video compativeis organizados por tamanho do menor para o maior.
+obs2: banda larga pesada e com maior valor cobrado pela hopedagem.
+<video width="500" poster="pasta/imagensdecapa.formato" controls>
+	<source src="pasta/nomevideo.formato" type="video/mp4">
+	<source src="pasta/nomevideo.formato" type="video/m4v">
+	<source src="pasta/nomevideo.formato" type="video/webm">
+	<source src="pasta/nomevideo.formato" type="video/ogg">
+	<p>Seu navegador não tem compatibilidade com reprodução de video.</p>
+</video>
+
+#Incorporação de vídeos externos
+No youtube e no site da vimeo existe na opção de compartilhamento a incorporação onde o site fornece
+o codigo para incorporar no site o video.
+
+codigo exemplo abaixo:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dhWqk9A0hik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+#desafio site com videos
+-criar uma pagina com imagens de posts para ir para video com video para ser executado
+-criar uma pagina central com video para assistir
+-texto para poder assistir curso completo direcionando para o youtube
+-botão de voltar.
+
+#Estilos CSS inline
+<body style="background-color: lightskyblue; font-family: Arial,Helvetica, sans-serif;>//cor e tamanho da pagina
+<h1 style="color: medumblue;">//cor titulo
+<p style="text-align: justify:"> ajustar o paragrafo a pagina
+
+#Estilos CSS internos
+DENTRO DO <head></head> É ONDE E FEITO O CSS interno
+<style>
+ body{
+	background-color: lightskyblue;
+	font-family: Arial, Helvetica,sans-serif;
+	font-size: 20 px;
+ }
+ h1{
+	color: darkblue;
+    background-color: lightblue;	
+ }
+ h2{
+	color: darkred;
+ }
+ p {
+	text-align: justify;
+ }
+</style> 
+
+
+#Estilos CSS externos
+-Na cabeça do <head></head> é onde vai ter o link para puxar o arquivo css
+  <link rel="stylesheet' href="style.css">
+
+-No arquivo deveremos colocar os comandos cs e n inicio colocar a regra
+
+@charset "UTF-8";
+ body{
+	background-color: lightskyblue;
+	font-family: Arial, Helvetica,sans-serif;
+	font-size: 20 px;
+ }
+ h1{
+	color: darkblue;
+    background-color: lightblue;	
+ }
+ h2{
+	color: darkred;
+ }
+ p {
+	text-align: justify;
+ }
+
+obs: pode usar mais de um link de estilo em quantas paginas quiser. melhor metodo! pode ser usado mais de um tipo de css e o css inline tem mais poder sobre os outros.

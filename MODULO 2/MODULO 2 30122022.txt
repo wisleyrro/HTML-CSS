@@ -1,0 +1,39 @@
+# fonte tamanhos e medidas e peso da fonte
+font-family: -> nome da fonte
+fonte-size: -> tamanho da fonte (cm(normal 16px) ou em(1 em = 16px))
+font-weight: -> estilo de fonte (bold, bolder,normal,...) peso da letra
+font-style: -> estilo da fonte (negrito, italico,...)
+text-decoration: underline;
+shorthand font: adiminuir codigo de design de fonte (font-style -> font-weight -> font-size -> font-family).
+font: italic bolder 3em 'Work Sans', sans-seif;
+
+-da para pegar fonte no google fonte e incorporar online no seu site!
+-da para baixar fontes criar uma pasta e colocar as fontes em uma pagina no projeto e incorporar tambem fonte!
+-pegar fonte de ontro site
+baixar extenção fonts ninja
+
+obs: instalar web develops para desenvolvedores web
+
+-WhatFontIs -> FONT IDENTIFIER -> MYFONTS
+site para identificar fonte em imagens
+
+#alinhamento de texto
+text-align: center/right/left e justify
+text-indent: 30px(para dar o espaço inicial do paragrafo).
+
+#usando o id com css
+	ID
+-na pagina de estilo css -> h1#princial{}
+id no css usar # (pode usar unico)
+-na tag h1 -> <h1 id ="principal">
+	CLASS
+-na tag h1 -> <h1 class ="principal">
+class no css usar . (pode usar varios)
+h1.princial{} ou .principal{}309611
+
+#CAP 15
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-element
+> = children
