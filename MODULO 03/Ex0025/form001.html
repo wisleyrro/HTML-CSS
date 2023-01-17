@@ -12,6 +12,90 @@
     </style>
 </head>
 <body>
+    <P>============================================</P>
+    <!--
+        input:file -> pegar arquivos usar o method="POST"
+        input:color -> selecionar cor.
+        input:range -> metodo usado para pesquisa de satisfação exemplo.
+    -->
+    <h1>Meu Quinto formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="10" value="2">
+        </p>
+        <p>
+            <label for="ifoto">Foto do perfil: </label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" required>
+        </p>
+        
+    </form>
+    <P>============================================</P>
+    <!--
+        input:radio -> radiobutton
+        (todo grupo de radiobutton tem que ter o mesmo name diferente do checkbox)
+        checked -> para iniciar marcada!
+        inpu:checkbox -> checkbox
+    -->
+    <h1>Meu Quinto formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas"> Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="f" checked><label for="isxfem"> Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esfuts" id="iesfuts"> <label for="iesfuts">Futsal</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label> <br>
+
+        </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar" required>
+            </p>
+        
+    </form>
+    <P>============================================</P>
+    <!--
+        input:email -> email
+        input:tel -> telefone
+        estudar mais sobre RegEX
+    -->
+    <h1>Meu Quarto formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="zap web" id="">
+            </p>
+            <p>
+                <label for="imail">Email: </label>
+                <input type="email" name="email" id="imail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar" required>
+            </p>
+        </fieldset>
+    </form>
+    <P>============================================</P>
     <!--
         Foi apresentado nesse novo formulario
         input:number para numeros de formulario
