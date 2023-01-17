@@ -12,15 +12,49 @@
     </style>
 </head>
 <body>
+    
+    <P>============================================</P>
     <h1>Meu primeiro Formulário</h1>
-    <form>
-        <p>Nome:
-            <input type="text" name="nome" id="nome">
-        </p>
-        <p>Sobrenome:
-            <input type="text" name="sobrenome" id="sobrenome">
-        </p>
+    <!--criando formulario-->
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <!--campo nome do formulario-->
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome"><br><br>
+        <!--campo sobrenome do formulario-->
+        <label for="sobrenome">Sobrenome: </label>
+        <input type="text" name="sobrenome" id="sobrenome">
+        <!--botão do formulario-->
         <p><input type="submit" value="Enviar"></p>
+    </form>
+    <P>============================================</P>
+    <!--
+        Foi apresentado nesste novo formulario
+        required: para requerer o preenchimento da informação
+        input:password -> para senhas
+        input:reset -> para limpar os campos do formulario
+        minlength -> minimo exigido
+        maxlength -> limite maximo (limita o campo do input para preenchimento)
+        size -> tamanho do campo de exibição
+        placeholder -> texto de fundo do campo informativo!
+        autocomplete -> pode ser informado nos campos!
+          -usuario pode usar o username
+          -senha pode usar o current-password(para o gerenciador de senha autopreencher) e o
+          new-password é para criar uma nova senha.
+    -->
+    <h1>Meu Segundo Formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post">
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="iusu" id="iusu" required minlength="5" maxlength="15" size="50" placeholder="Digigte nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="" id="" required minlength="8" maxlength="15" placeholder="Digite a senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
     
 </body>
