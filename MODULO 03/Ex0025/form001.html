@@ -12,7 +12,36 @@
     </style>
 </head>
 <body>
+    <h1>Minha setima formulário(Com javascript)</h1>
+    <!--
+        utilizando o oninput com javascript para calcular idade em html no output
+    -->
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2020"
+            oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é: </label>
+            <output id="iidade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+        </script>
+    </form>
+    <P>============================================</P>
     <h1>Minha setima formulário</h1>
+    <!--
+        utilizando o oninput para fazer a soma dos valores em html no output
+    -->
     <form action="cadastro.php" method="POST" autocomplete="on">
         <p>
             <label for="in1">Número 1: </label>
@@ -34,7 +63,6 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar" required>
         </p>
-        
     </form>
     <P>============================================</P>
     <!--
