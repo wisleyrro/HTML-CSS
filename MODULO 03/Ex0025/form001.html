@@ -12,13 +12,83 @@
     </style>
 </head>
 <body>
+    <h1>Minha setima formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="in1">Número 1: </label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">Número 2: </label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required
+            oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma: </label>
+            <output name="soma" id="isoma">0</output>
+
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" required>
+        </p>
+        
+    </form>
+    <P>============================================</P>
+    <!--
+        Combobox utiliza o select e option
+        optgroup serve para agrupar as opçoes ex: estados na região nordeste
+        selected -> para vim selecionado
+        datalist -> utiliza o option e deve ser ligada a label com a opção list
+        vai aparecer a sugestão na tela
+        textarea -> para a area de texto e usar o metodo POST
+    -->
+    <h1>Minha setima formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="iest">Estados: </label>
+            <select name="estado" id="iest">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Nordeste">
+                    <option value="CE">Ceará</option>
+                </optgroup>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="mensagem" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" required>
+        </p>
+        
+    </form>
     <P>============================================</P>
     <!--
         input:file -> pegar arquivos usar o method="POST"
         input:color -> selecionar cor.
         input:range -> metodo usado para pesquisa de satisfação exemplo.
     -->
-    <h1>Meu Quinto formulário</h1>
+    <h1>Meu Sexto formulário</h1>
     <form action="cadastro.php" method="POST" autocomplete="on">
         <p>
             <label for="icor">Cor: </label>
